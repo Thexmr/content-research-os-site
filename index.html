@@ -1,127 +1,208 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Northstar Content Systems | Mehr Kunden durch klare Inhalte</title>
-  <meta name="description" content="Wir helfen Unternehmen mit klaren Inhalten sichtbar zu werden und mehr Anfragen zu bekommen – einfach, professionell und planbar."/>
-  <meta name="theme-color" content="#0a1228"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northstar | Mehr Anfragen durch klare Inhalte</title>
+  <meta name="description" content="Hochwertige Website für B2B: Wir erstellen verständliche Inhalte, die Vertrauen aufbauen und neue Kundenanfragen bringen." />
+  <meta name="theme-color" content="#0a1228" />
   <style>
-    :root{--bg:#070f22;--bg2:#0b1732;--card:#111f46;--line:#294486;--text:#f1f5ff;--muted:#a9b9e8;--brand:#79b0ff;--brand2:#6ee5ca;--radius:18px;--shadow:0 14px 40px rgba(0,0,0,.30);--max:1120px}
+    :root{
+      --bg:#070f22;--bg2:#0d1731;--card:#111f45;--line:#2a4687;--text:#f3f6ff;--muted:#a8b8e6;
+      --brand:#79b1ff;--brand2:#70e6cc;--radius:18px;--shadow:0 20px 45px rgba(0,0,0,.32);
+      --max:1200px;
+    }
     *{box-sizing:border-box} html,body{margin:0;padding:0;scroll-behavior:smooth}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1000px 520px at -10% -20%,#1a3371 0%,transparent 58%),radial-gradient(800px 420px at 110% -15%,#15506a 0%,transparent 62%),linear-gradient(180deg,var(--bg),var(--bg2));line-height:1.65;overflow-x:hidden}
-    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
-    .top{position:sticky;top:0;z-index:50;background:rgba(7,13,29,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(52,80,148,.45)}
-    .nav{height:70px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-weight:900}.logo span{color:var(--brand2)}
-    .links{display:flex;gap:14px}.links a{text-decoration:none;color:var(--muted);font-size:14px}.links a:hover{color:#fff}
-    .menu{display:none;border:1px solid #3d5ca5;background:#152c63;color:#d7e2ff;border-radius:10px;padding:8px 11px;font-weight:700}
-    .mobile-nav{display:none;flex-direction:column;gap:10px;padding:0 0 14px}.mobile-nav a{text-decoration:none;color:var(--muted)}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at -10% -20%, #1a3370 0%, transparent 58%),
+        radial-gradient(900px 500px at 110% -15%, #145870 0%, transparent 62%),
+        linear-gradient(180deg,var(--bg),var(--bg2));
+      line-height:1.65;overflow-x:hidden;
+    }
+    .container{max-width:var(--max);margin:0 auto;padding:0 24px}
 
-    .hero{padding:74px 0 28px}
-    .badge{display:inline-block;border:1px solid #3e60ad;background:#172f67;color:#d4e0ff;padding:7px 12px;border-radius:999px;font-size:12px}
-    h1{margin:14px 0 12px;font-size:clamp(32px,5.6vw,56px);line-height:1.07;max-width:920px}
-    .lead{font-size:19px;max-width:780px;color:var(--muted)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid transparent}
-    .btn.primary{background:linear-gradient(90deg,var(--brand),#9ecbff);color:#07142d}
-    .btn.secondary{background:rgba(19,35,75,.72);border-color:#4061ad;color:#fff}
+    /* NAV */
+    .top{position:sticky;top:0;z-index:70;background:rgba(7,14,30,.74);backdrop-filter:blur(10px);border-bottom:1px solid rgba(55,84,152,.42)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:.2px}.brand span{color:var(--brand2)}
+    .links{display:flex;gap:18px}
+    .links a{color:var(--muted);text-decoration:none;font-size:14px}
+    .links a:hover{color:#fff}
+    .menu-btn{display:none;border:1px solid #3b5ca7;background:#173165;color:#d7e2ff;border-radius:10px;padding:8px 11px;font-weight:700}
+    .mobile{display:none;flex-direction:column;gap:10px;padding:0 0 14px}
+    .mobile a{color:var(--muted);text-decoration:none}
 
-    .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
-    .kpi{padding:14px;border:1px solid var(--line);background:rgba(15,28,62,.72);border-radius:14px;box-shadow:var(--shadow)}
-    .kpi b{display:block;font-size:24px}.kpi span{font-size:13px;color:var(--muted)}
+    /* HERO */
+    .hero{position:relative;padding:84px 0 34px}
+    .badge{display:inline-block;font-size:12px;border:1px solid #3e60ae;background:#173066;color:#d4e0ff;padding:7px 12px;border-radius:999px}
+    h1{margin:14px 0 14px;font-size:clamp(34px,5.8vw,64px);line-height:1.05;max-width:980px}
+    .lead{font-size:20px;max-width:860px;color:var(--muted)}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-block;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid transparent;transition:.2s transform,.2s box-shadow}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),#9ecbff);color:#07142d;box-shadow:0 10px 28px rgba(121,177,255,.35)}
+    .btn.secondary{background:rgba(20,35,74,.72);border-color:#4061ad;color:#fff}
 
-    section{padding:30px 0}
-    h2{margin:0 0 8px;font-size:32px}
-    .sub{max-width:760px;color:var(--muted)}
+    .hero-cards{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:28px}
+    .panel{background:linear-gradient(180deg,rgba(18,33,72,.94),rgba(15,28,63,.9));border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .panel h3{margin:0 0 8px;font-size:22px}
+    .ticks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+    .tick{font-size:14px;color:#d4e0ff;padding:8px 10px;border:1px solid #34579f;border-radius:10px;background:rgba(13,28,62,.6)}
 
+    /* SECTIONS */
+    section{padding:34px 0}
+    h2{margin:0 0 10px;font-size:36px;line-height:1.18}
+    .sub{max-width:820px;color:var(--muted)}
     .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
     .card{background:linear-gradient(180deg,rgba(18,33,72,.94),rgba(15,28,63,.9));border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .card h3{margin:0 0 6px;font-size:22px}
+    .card h3{margin:0 0 8px;font-size:22px}
     .small{font-size:14px;color:var(--muted)}
     ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
 
-    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-    .step{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(14,25,54,.67)}
-    .step b{display:inline-block;padding:1px 8px;border-radius:8px;background:#233d74;border:1px solid #4768b4;margin-bottom:6px}
+    .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .step{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(14,25,54,.65)}
+    .step b{display:inline-block;background:#243d75;border:1px solid #4b6ab5;border-radius:8px;padding:1px 8px;margin-bottom:6px}
 
-    .faq .item{padding:12px 0;border-bottom:1px solid #2a427b}
-    .footer{padding:26px 0 34px;color:#93a7de;font-size:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .footer a{color:#b5c5f0;text-decoration:none}
+    .pricing .price{font-size:38px;font-weight:900;margin:4px 0}
+    .pricing .price span{font-size:15px;color:#a7bbea}
 
-    @media (max-width:960px){.grid3,.kpis,.steps{grid-template-columns:1fr 1fr}}
-    @media (max-width:760px){.container{padding:0 16px}.links{display:none}.menu{display:inline-block}.mobile-nav.show{display:flex}.lead{font-size:17px}.btn{width:100%;text-align:center}.grid3,.kpis,.steps{grid-template-columns:1fr}h2{font-size:28px}}
+    .proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .proof .item{padding:16px;border:1px solid var(--line);border-radius:14px;background:rgba(12,24,55,.64)}
+    .proof strong{display:block;font-size:28px}
+
+    .faq .q{padding:12px 0;border-bottom:1px solid #2c437b}
+
+    .contact-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
+    .form{display:grid;gap:10px;margin-top:10px}
+    .form input,.form textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid #34579f;background:#0e1c41;color:#f3f6ff;outline:none}
+    .form input:focus,.form textarea:focus{border-color:#5a83db}
+
+    .footer{padding:28px 0 36px;color:#94a9df;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .footer a{color:#b6c6f2;text-decoration:none}
+
+    /* Animations */
+    .reveal{opacity:0;transform:translateY(12px);transition:.55s opacity,.55s transform}
+    .reveal.show{opacity:1;transform:translateY(0)}
+
+    /* Mobile */
+    @media (max-width:1040px){.grid3,.proof{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero-cards,.contact-wrap{grid-template-columns:1fr}}
+    @media (max-width:760px){
+      .container{padding:0 16px}
+      .links{display:none}.menu-btn{display:inline-block}.mobile.show{display:flex}
+      .lead{font-size:17px}.btn{width:100%;text-align:center}
+      h2{font-size:30px}
+      .grid3,.proof,.steps{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
   <header class="top">
     <div class="container nav">
-      <div class="logo">Northstar <span>Content Systems</span></div>
+      <div class="brand">Northstar <span>Content Systems</span></div>
       <nav class="links">
-        <a href="#was">Was wir machen</a><a href="#fuerwen">Für wen</a><a href="#ablauf">Ablauf</a><a href="#preise">Preise</a><a href="#kontakt">Kontakt</a>
+        <a href="#leistung">Leistung</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#preise">Preise</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
-      <button class="menu" id="menuBtn">Menü</button>
+      <button id="menuBtn" class="menu-btn">Menü</button>
     </div>
-    <div class="container mobile-nav" id="mobileNav">
-      <a href="#was">Was wir machen</a><a href="#fuerwen">Für wen</a><a href="#ablauf">Ablauf</a><a href="#preise">Preise</a><a href="#kontakt">Kontakt</a>
+    <div id="mobileNav" class="container mobile">
+      <a href="#leistung">Leistung</a><a href="#ablauf">Ablauf</a><a href="#preise">Preise</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero" id="was">
-      <span class="badge">Einfach erklärt</span>
-      <h1>Wir erstellen für dein Unternehmen Inhalte, die verstanden werden — und neue Anfragen bringen.</h1>
-      <p class="lead">Kurz gesagt: Wir kümmern uns um deine Sichtbarkeit. Du bekommst jede Woche professionelle Beiträge und klare Themen, damit mehr passende Kunden auf dich aufmerksam werden.</p>
-      <div class="cta">
-        <a class="btn primary" href="#kontakt">Jetzt starten</a>
-        <a class="btn secondary" href="#ablauf">So läuft es ab</a>
+    <section class="hero reveal">
+      <span class="badge">Einfach erklärt · Premium umgesetzt</span>
+      <h1>Wir machen dein Unternehmen online klar sichtbar — mit Inhalten, die jeder versteht und Kunden überzeugen.</h1>
+      <p class="lead">Du musst nicht täglich posten oder texten. Wir übernehmen Strategie + Inhalte + Struktur, damit du professionell auftrittst und mehr passende Anfragen bekommst.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#kontakt">Kostenlosen Start-Call sichern</a>
+        <a class="btn secondary" href="#ablauf">So arbeiten wir</a>
       </div>
-      <div class="kpis">
-        <div class="kpi"><b>Wöchentlich</b><span>neue Inhalte ohne Stress</span></div>
-        <div class="kpi"><b>Klar</b><span>einfache Prozesse, feste Schritte</span></div>
-        <div class="kpi"><b>Messbar</b><span>monatlicher Überblick über Ergebnisse</span></div>
+
+      <div class="hero-cards">
+        <article class="panel">
+          <h3>Was du konkret bekommst</h3>
+          <div class="ticks">
+            <div class="tick">✔ klare Themenplanung</div>
+            <div class="tick">✔ professionelle Texte</div>
+            <div class="tick">✔ feste Wochenstruktur</div>
+            <div class="tick">✔ monatlichen Ergebnis-Report</div>
+          </div>
+        </article>
+        <article class="panel">
+          <h3>Schneller Start</h3>
+          <p class="small">In der Regel starten wir innerhalb von 48 Stunden nach dem Erstgespräch.</p>
+        </article>
       </div>
     </section>
 
-    <section id="fuerwen">
-      <h2>Für wen ist das?</h2>
-      <p class="sub">Für Unternehmen, die professionell auftreten wollen, aber keine Zeit haben, ständig selbst Inhalte zu planen und zu schreiben.</p>
+    <section id="leistung" class="reveal">
+      <h2>Unsere Leistung</h2>
+      <p class="sub">Ohne Fachchinesisch: Wir bauen dir ein System, das regelmäßig gute Inhalte liefert und Vertrauen bei potenziellen Kunden aufbaut.</p>
       <div class="grid3">
-        <article class="card"><h3>Agenturen</h3><p>Zeigt eure Expertise klar nach außen und bleibt sichtbar.</p></article>
-        <article class="card"><h3>Berater</h3><p>Gewinnt Vertrauen durch klare, hilfreiche Inhalte.</p></article>
-        <article class="card"><h3>SaaS & Dienstleister</h3><p>Erklärt euer Angebot verständlich und zieht passende Leads an.</p></article>
+        <article class="card"><h3>1) Klare Positionierung</h3><p>Wir definieren, wie du dich verständlich und professionell präsentierst.</p></article>
+        <article class="card"><h3>2) Inhalte mit Wirkung</h3><p>Wir schreiben regelmäßig Beiträge, Newsletter und Themenartikel für dich.</p></article>
+        <article class="card"><h3>3) Planbarer Ablauf</h3><p>Du bekommst feste Prozesse statt Chaos – Woche für Woche.</p></article>
       </div>
     </section>
 
-    <section id="ablauf">
-      <h2>So läuft die Zusammenarbeit ab</h2>
+    <section id="ablauf" class="reveal">
+      <h2>So läuft es ab</h2>
       <div class="steps">
-        <div class="step"><b>1</b><strong>Kennenlernen</strong><div class="small">Du erklärst kurz dein Angebot und deine Zielgruppe.</div></div>
-        <div class="step"><b>2</b><strong>Plan</strong><div class="small">Wir erstellen einen klaren Themen- und Umsetzungsplan.</div></div>
-        <div class="step"><b>3</b><strong>Umsetzung</strong><div class="small">Du bekommst regelmäßig fertige Inhalte zur Freigabe.</div></div>
+        <div class="step"><b>1</b><strong>Kurzgespräch</strong><div class="small">Wir klären Angebot, Zielgruppe und Ziel.</div></div>
+        <div class="step"><b>2</b><strong>Plan</strong><div class="small">Du bekommst einen einfachen Umsetzungsplan.</div></div>
+        <div class="step"><b>3</b><strong>Umsetzung</strong><div class="small">Wir liefern dir jede Woche fertige Inhalte.</div></div>
+        <div class="step"><b>4</b><strong>Optimierung</strong><div class="small">Wir verbessern jeden Monat die Ergebnisse.</div></div>
       </div>
     </section>
 
-    <section id="preise">
-      <h2>Preise (einfach)</h2>
+    <section id="preise" class="reveal pricing">
+      <h2>Pakete</h2>
       <div class="grid3">
-        <article class="card"><h3>Starter</h3><p><strong>1.200€</strong> / 30 Tage</p><p class="small">Zum Testen und für schnelle erste Ergebnisse.</p></article>
-        <article class="card"><h3>Growth</h3><p><strong>2.500€</strong> / Monat</p><p class="small">Für regelmäßigen Output und planbares Wachstum.</p></article>
-        <article class="card"><h3>Pro</h3><p><strong>4.000€</strong> / Monat</p><p class="small">Für maximale Qualität, Tiefe und Skalierung.</p></article>
+        <article class="card"><h3>Starter</h3><p class="price">1.200€</p><p class="small">30 Tage zum Testen und für erste Ergebnisse.</p></article>
+        <article class="card"><h3>Growth</h3><p class="price">2.500€ <span>/Monat</span></p><p class="small">Für Unternehmen, die konstant sichtbar sein wollen.</p></article>
+        <article class="card"><h3>Pro</h3><p class="price">4.000€ <span>/Monat</span></p><p class="small">Für maximale Qualität und schnelle Skalierung.</p></article>
       </div>
     </section>
 
-    <section class="faq">
-      <h2>Häufige Fragen</h2>
-      <div class="item"><strong>Muss ich viel selbst machen?</strong><br><span class="small">Nein. Du gibst nur Input und Freigabe, wir erledigen den Rest.</span></div>
-      <div class="item"><strong>Wie schnell kann es starten?</strong><br><span class="small">In der Regel innerhalb von 48 Stunden.</span></div>
-      <div class="item"><strong>Ist das auch für Anfänger verständlich?</strong><br><span class="small">Ja. Wir arbeiten bewusst klar, einfach und ohne Fachjargon.</span></div>
+    <section class="reveal">
+      <h2>Warum Kunden das wählen</h2>
+      <div class="proof">
+        <div class="item"><strong>Mehr Klarheit</strong><span class="small">Alle wissen, was wann gemacht wird.</span></div>
+        <div class="item"><strong>Mehr Vertrauen</strong><span class="small">Professioneller Außenauftritt statt Zufall.</span></div>
+        <div class="item"><strong>Mehr Anfragen</strong><span class="small">Bessere Sichtbarkeit bei der richtigen Zielgruppe.</span></div>
+      </div>
     </section>
 
-    <section id="kontakt" class="card">
-      <h2>Kontakt</h2>
-      <p>Schreib einfach „START“ und 1–2 Sätze zu deinem Business. Dann bekommst du direkt den nächsten Schritt.</p>
-      <p><strong>E-Mail:</strong> hello@yourdomain.com<br><strong>Telegram:</strong> @yourhandle</p>
+    <section id="faq" class="reveal faq">
+      <h2>Häufige Fragen</h2>
+      <div class="q"><strong>Muss ich technisch fit sein?</strong><br><span class="small">Nein. Wir erklären alles einfach und übernehmen die Umsetzung.</span></div>
+      <div class="q"><strong>Wie viel Zeit brauche ich?</strong><br><span class="small">Sehr wenig. Du gibst nur Feedback und Freigaben.</span></div>
+      <div class="q"><strong>Ist das auch für Einsteiger geeignet?</strong><br><span class="small">Ja. Genau dafür ist die Struktur gemacht.</span></div>
+    </section>
+
+    <section id="kontakt" class="reveal contact-wrap">
+      <article class="card">
+        <h2>Kontakt</h2>
+        <p>Schreib uns „START“ + 1–2 Sätze zu deinem Business. Wir melden uns mit dem nächsten klaren Schritt.</p>
+        <p><strong>E-Mail:</strong> hello@yourdomain.com<br><strong>Telegram:</strong> @yourhandle</p>
+      </article>
+      <article class="card">
+        <h3>Schnellanfrage</h3>
+        <form class="form">
+          <input placeholder="Dein Name" />
+          <input placeholder="E-Mail" />
+          <textarea rows="4" placeholder="Wobei brauchst du konkret Hilfe?"></textarea>
+          <button type="button" class="btn primary">Anfrage senden</button>
+        </form>
+      </article>
     </section>
 
     <footer class="footer">
@@ -131,9 +212,10 @@
   </main>
 
   <script>
-    const mBtn=document.getElementById('menuBtn');
-    const mNav=document.getElementById('mobileNav');
-    if(mBtn&&mNav){mBtn.addEventListener('click',()=>mNav.classList.toggle('show'));}
+    const mb=document.getElementById('menuBtn');const nav=document.getElementById('mobileNav');
+    if(mb&&nav){mb.addEventListener('click',()=>nav.classList.toggle('show'));}
+    const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   </script>
 </body>
 </html>
