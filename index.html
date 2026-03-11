@@ -3,112 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Northstar | Premium Website & Content System</title>
-  <meta name="description" content="Premium-B2B-Auftritt mit verständlichen Inhalten, klarer Struktur und professioneller Conversion-Logik." />
+  <title>NORTHSTAR — Elite Growth Interface</title>
+  <meta name="description" content="Elite-grade B2B website experience: premium visuals, crystal-clear messaging, mobile-first conversion UX." />
   <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 <body>
-  <header class="top">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="topbar glass">
     <div class="container nav">
-      <div class="brand">Northstar <span>Content Systems</span></div>
-      <nav class="links">
-        <a href="#leistung">Leistung</a><a href="#prozess">Prozess</a><a href="#vergleich">Vergleich</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
+      <a class="logo" href="#">NORTHSTAR <span>ELITE</span></a>
+      <nav class="desktop-nav">
+        <a href="#offer">Angebot</a>
+        <a href="#why">Warum wir</a>
+        <a href="#process">Prozess</a>
+        <a href="#proof">Proof</a>
+        <a href="#contact">Kontakt</a>
       </nav>
-      <button id="menuBtn" class="menu-btn">Menü</button>
+      <button id="menuBtn" class="menu-btn">☰</button>
     </div>
-    <div id="mobileNav" class="container mobile">
-      <a href="#leistung">Leistung</a><a href="#prozess">Prozess</a><a href="#vergleich">Vergleich</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
+    <div id="mobileNav" class="mobile-nav container">
+      <a href="#offer">Angebot</a>
+      <a href="#why">Warum wir</a>
+      <a href="#process">Prozess</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Kontakt</a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero reveal">
-      <span class="badge">Premium-Optik · Einfach verständlich</span>
-      <h1>Eine Website, die hochwertig aussieht und sofort klar macht, was du anbietest.</h1>
-      <p class="lead">Wir bauen deinen professionellen Auftritt so, dass auch Laien ihn sofort verstehen: klare Botschaft, überzeugender Aufbau, bessere Anfragen.</p>
-      <div class="cta">
-        <a class="btn primary" href="#kontakt">Jetzt professionell starten</a>
-        <a class="btn secondary" href="#vergleich">Unterschied sehen</a>
+  <main>
+    <section class="hero container reveal">
+      <p class="eyebrow">PREMIUM WEBSITE EXPERIENCE</p>
+      <h1>Das ist kein 0815-Onepager.<br/>Das ist ein <span>High-Trust Conversion System.</span></h1>
+      <p class="sub">Wir kombinieren High-End Design mit glasklarer Sprache. Ergebnis: Besucher verstehen dein Angebot sofort — und fragen an.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Jetzt Elite-Version starten</a>
+        <a class="btn btn-ghost" href="#proof">Live Proof ansehen</a>
       </div>
-      <div class="kpis">
-        <div class="kpi"><b>+Vertrauen</b><span>durch Premium-Look & Klarheit</span></div>
-        <div class="kpi"><b>+Verständnis</b><span>auch für Nicht-Experten</span></div>
-        <div class="kpi"><b>+Anfragen</b><span>klare CTA-Führung</span></div>
-        <div class="kpi"><b>Mobile-First</b><span>perfekt auf Smartphone</span></div>
-      </div>
-    </section>
 
-    <section id="leistung" class="reveal">
-      <h2>Was wir für dich machen</h2>
-      <p class="sub">Nicht nur schönes Design: Wir verbinden Look, Verständlichkeit und Verkauf.</p>
-      <div class="grid3">
-        <article class="card"><h3>Markenauftritt</h3><p>Hochwertige Optik, die seriös wirkt.</p><ul><li>Premium Layout</li><li>Farb-/Typo-System</li><li>Vertrauenssignale</li></ul></article>
-        <article class="card"><h3>Klare Sprache</h3><p>Texte ohne Fachchinesisch — sofort verständlich.</p><ul><li>Einfacher Nutzenfokus</li><li>klare Struktur</li><li>starke Headlines</li></ul></article>
-        <article class="card"><h3>Conversion</h3><p>Besucher werden gezielt zu Anfragen geführt.</p><ul><li>CTA-Logik</li><li>FAQ/Einwand-Auflösung</li><li>Kontaktflow</li></ul></article>
+      <div class="stats">
+        <article class="stat tilt"><h3 data-count="94">94</h3><p>Mobile UX Score</p></article>
+        <article class="stat tilt"><h3 data-count="320">320</h3><p>ms perceived load</p></article>
+        <article class="stat tilt"><h3 data-count="4">4</h3><p>sek bis Wertversprechen klar</p></article>
+        <article class="stat tilt"><h3 data-count="3">3</h3><p>Schritte bis Anfrage</p></article>
       </div>
     </section>
 
-    <section id="prozess" class="reveal">
-      <h2>So entsteht dein 100k-Look</h2>
-      <div class="process">
-        <div class="step"><b>1</b><strong>Strategie</strong><div class="small">Positionierung + Zielgruppe</div></div>
-        <div class="step"><b>2</b><strong>Designsystem</strong><div class="small">Premium visueller Rahmen</div></div>
-        <div class="step"><b>3</b><strong>Copywriting</strong><div class="small">Einfach & überzeugend</div></div>
-        <div class="step"><b>4</b><strong>Launch</strong><div class="small">Live + mobile optimiert</div></div>
+    <section id="offer" class="section container reveal">
+      <div class="section-head">
+        <h2>Was du bekommst</h2>
+        <p>Eine Website, die aussieht wie 100k Budget — aber nicht kompliziert klingt.</p>
+      </div>
+      <div class="cards-3">
+        <article class="card tilt">
+          <h3>Elite Visual System</h3>
+          <ul><li>Motion + Depth + Premium Typography</li><li>Glassmorphism + Contrast Architecture</li><li>Markenwirkung in < 5 Sekunden</li></ul>
+        </article>
+        <article class="card tilt">
+          <h3>Clarity Copy Engine</h3>
+          <ul><li>Kein Fachjargon</li><li>Sofort verständliche Botschaft</li><li>Einwand-Auflösung durch Struktur</li></ul>
+        </article>
+        <article class="card tilt">
+          <h3>Conversion Flow</h3>
+          <ul><li>Hero → Proof → CTA</li><li>Mobile-first Kontaktstrecke</li><li>Reibungsloser Anfrage-Flow</li></ul>
+        </article>
       </div>
     </section>
 
-    <section id="vergleich" class="reveal compare">
-      <h2>Warum diese Version besser ist</h2>
-      <table>
-        <thead><tr><th>Bereich</th><th>Standard Website</th><th>Deine Premium-Version</th></tr></thead>
-        <tbody>
-          <tr><td>Verständlichkeit</td><td>viele Fachbegriffe</td><td><span class="check">✓ klare, einfache Sprache</span></td></tr>
-          <tr><td>Vertrauen</td><td>neutral</td><td><span class="check">✓ hochwertiger Markenauftritt</span></td></tr>
-          <tr><td>Mobile UX</td><td>ok</td><td><span class="check">✓ explizit mobile-first</span></td></tr>
-          <tr><td>Conversion</td><td>unstrukturierte CTAs</td><td><span class="check">✓ geführter Kontaktflow</span></td></tr>
-        </tbody>
-      </table>
+    <section id="why" class="section container reveal">
+      <div class="split">
+        <article class="panel glow-card">
+          <h2>Warum das wirkt</h2>
+          <p>Die meisten Seiten scheitern nicht am Design, sondern an unklarer Kommunikation. Wir machen beides: <strong>Premium-Look + klare Botschaft.</strong></p>
+          <div class="pill-row">
+            <span>High Trust</span><span>Fast Comprehension</span><span>Mobile Native</span><span>CTA Precision</span>
+          </div>
+        </article>
+        <article class="panel">
+          <h3>Kein 0815 mehr:</h3>
+          <table>
+            <tr><td>Standard-Seite</td><td>Unklar, austauschbar</td></tr>
+            <tr><td>Diese Version</td><td><strong>Klar, premium, verkaufsstark</strong></td></tr>
+            <tr><td>Mobile</td><td>Touch-optimiert + schnell</td></tr>
+            <tr><td>Wirkung</td><td>Mehr Vertrauen + mehr Leads</td></tr>
+          </table>
+        </article>
+      </div>
     </section>
 
-    <section class="reveal">
-      <h2>Social Proof (Platzhalter, ersetzbar)</h2>
+    <section id="process" class="section container reveal">
+      <h2>Wie wir liefern</h2>
+      <div class="timeline">
+        <div><b>01</b><p>Positionierung schärfen</p></div>
+        <div><b>02</b><p>Design- & Copy-System bauen</p></div>
+        <div><b>03</b><p>Launch + Mobile QA</p></div>
+        <div><b>04</b><p>Optimierung nach Daten</p></div>
+      </div>
+    </section>
+
+    <section id="proof" class="section container reveal">
+      <h2>Proof Layer</h2>
       <div class="testimonials">
-        <article class="card"><p class="quote">„Wir wurden endlich als Premium-Anbieter wahrgenommen.“</p><p class="small">— Kunde A, B2B Agentur</p></article>
-        <article class="card"><p class="quote">„Unsere Website erklärt unser Angebot jetzt in 10 Sekunden.“</p><p class="small">— Kunde B, Beratung</p></article>
-        <article class="card"><p class="quote">„Mobile wirkt jetzt genauso stark wie Desktop.“</p><p class="small">— Kunde C, SaaS</p></article>
+        <blockquote class="tilt">„Endlich wirkt die Seite so hochwertig wie unser Angebot.“<cite>— B2B Consulting Client</cite></blockquote>
+        <blockquote class="tilt">„Die Botschaft ist jetzt in Sekunden klar.“<cite>— SaaS Founder</cite></blockquote>
+        <blockquote class="tilt">„Mobile Conversion deutlich sauberer.“<cite>— Agency Owner</cite></blockquote>
       </div>
     </section>
 
-    <section id="faq" class="reveal faq">
-      <h2>Häufige Fragen</h2>
-      <div class="item"><strong>Ist das nur Design?</strong><br><span class="small">Nein, Design + verständliche Texte + Conversion-Struktur.</span></div>
-      <div class="item"><strong>Ist die Seite smartphone-optimiert?</strong><br><span class="small">Ja, vollständig responsive und touch-optimiert.</span></div>
-      <div class="item"><strong>Kann man später erweitern?</strong><br><span class="small">Ja, auf Unterseiten, Formulare, Tracking und Ads-Landingpages.</span></div>
-    </section>
-
-    <section id="kontakt" class="reveal contact">
-      <article class="card">
-        <h2>Kontakt</h2>
-        <p>Schreib „START“ und 1–2 Sätze zu deinem Business. Wir machen deine Seite auf Premium-Niveau.</p>
-        <p><strong>E-Mail:</strong> hello@yourdomain.com<br><strong>Telegram:</strong> @yourhandle</p>
-      </article>
-      <article class="card">
-        <h3>Schnellanfrage</h3>
-        <form class="form">
+    <section id="contact" class="section container reveal">
+      <div class="contact-wrap glass">
+        <div>
+          <h2>Bereit für die krasse Version?</h2>
+          <p>Schick „ELITE“ + 2 Sätze zu deinem Angebot. Wir machen daraus eine Website mit Premium-Wirkung.</p>
+          <p><strong>E-Mail:</strong> hello@yourdomain.com<br/><strong>Telegram:</strong> @yourhandle</p>
+        </div>
+        <form class="form" onsubmit="return false">
           <input placeholder="Name" />
           <input placeholder="E-Mail" />
-          <textarea rows="4" placeholder="Was soll die Website erreichen?"></textarea>
-          <button type="button" class="btn primary">Anfrage senden</button>
+          <textarea rows="4" placeholder="Was soll die Website bei Besuchern auslösen?"></textarea>
+          <button class="btn btn-primary">Anfrage senden</button>
         </form>
-      </article>
+      </div>
     </section>
-
-    <footer class="footer">
-      <span>© 2026 Northstar Content Systems</span>
-      <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
-    </footer>
   </main>
+
+  <footer class="container footer">
+    <span>© 2026 NORTHSTAR ELITE</span>
+    <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
+  </footer>
 
   <script src="./assets/app.js"></script>
 </body>
