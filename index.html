@@ -2,182 +2,126 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northstar Content Systems</title>
-  <meta name="description" content="Professionelles B2B Content & Research OS: planbarer Content, Markt-Insights, klare Prozesse und messbare Ergebnisse." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northstar Content Systems | B2B Content & Research OS</title>
+  <meta name="description" content="Hochprofessionelles B2B Content & Research OS für Agenturen, Beratungen und SaaS. Strukturierte Delivery, messbare Ergebnisse, klare Prozesse." />
   <meta property="og:title" content="Northstar Content Systems" />
-  <meta property="og:description" content="Done-for-you B2B Content & Research OS für Agenturen, Beratungen und SaaS." />
+  <meta property="og:description" content="Professional Done-for-you B2B Content & Research OS" />
   <meta property="og:type" content="website" />
   <style>
-    :root{
-      --bg:#0a1022;--bg2:#0d1630;--card:#121d3f;--line:#263768;
-      --text:#eef3ff;--muted:#aebce5;--brand:#6ea8fe;--brand2:#7be8c8;--ok:#35d39a;
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(900px 480px at 10% -10%, #1d2d5f 0%, transparent 60%),
-        radial-gradient(700px 380px at 90% 0%, #183d57 0%, transparent 62%),
-        linear-gradient(180deg,var(--bg),var(--bg2));
-      line-height:1.65;
-    }
-    .container{max-width:1080px;margin:0 auto;padding:24px}
-    .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0 6px}
-    .logo{font-weight:800;letter-spacing:.3px}
-    .logo span{color:var(--brand2)}
-    .nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
-    .nav a:hover{color:var(--text)}
-    .hero{padding:72px 0 34px}
-    .badge{display:inline-block;padding:6px 12px;border:1px solid #3a518f;background:#15254f;border-radius:999px;font-size:12px;color:#c8d6ff}
-    h1{font-size:48px;line-height:1.08;margin:14px 0 14px;max-width:900px}
-    p{color:var(--muted)}
-    .lead{font-size:18px;max-width:820px}
-    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
-    .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:12px;padding:12px 18px;border:1px solid transparent}
-    .btn.primary{background:linear-gradient(90deg,var(--brand),#8ec5ff);color:#08152f}
-    .btn.secondary{border-color:#3b4f87;color:var(--text);background:rgba(14,24,52,.5)}
-    .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
-    .kpi{background:rgba(15,26,56,.72);border:1px solid var(--line);border-radius:14px;padding:14px}
-    .kpi b{font-size:22px;color:#fff;display:block}
-    .section{padding:28px 0}
-    .section h2{font-size:30px;margin:0 0 10px}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .card{background:rgba(16,28,60,.82);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
-    .card h3{margin:0 0 6px;font-size:20px}
-    .small{font-size:14px}
+    :root{--bg:#070d1f;--bg-soft:#0d1630;--card:#111d3f;--line:#273b73;--text:#eef3ff;--muted:#aab8e3;--brand:#7ab1ff;--brand2:#6ce1c5;--danger:#ff9f9f;--radius:16px;--shadow:0 12px 30px rgba(0,0,0,.25)}
+    *{box-sizing:border-box} html,body{margin:0} body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(900px 450px at 0% -15%,#1a2f66 0%,transparent 60%),radial-gradient(800px 380px at 100% -5%,#11405a 0%,transparent 62%),linear-gradient(180deg,var(--bg),var(--bg-soft));color:var(--text);line-height:1.65}
+    .container{max-width:1140px;margin:0 auto;padding:0 22px}
+    .top{position:sticky;top:0;z-index:20;background:rgba(7,13,31,.72);backdrop-filter:blur(10px);border-bottom:1px solid #1c2e5e}
+    .nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.3px}.logo span{color:var(--brand2)}
+    .links a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}.links a:hover{color:#fff}
+    .hero{padding:74px 0 32px}
+    .badge{display:inline-block;font-size:12px;padding:6px 12px;border-radius:999px;background:#142653;border:1px solid #365497;color:#d0dcff}
+    h1{margin:12px 0 12px;font-size:clamp(32px,6vw,56px);line-height:1.07;max-width:980px}
+    .lead{font-size:19px;max-width:860px;color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid transparent}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),#9cc9ff);color:#05132d}
+    .btn.secondary{border-color:#38518f;color:#fff;background:rgba(18,32,70,.65)}
+    .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+    .kpi{padding:14px;border:1px solid var(--line);background:rgba(13,25,55,.7);border-radius:14px;box-shadow:var(--shadow)}
+    .kpi b{display:block;font-size:24px}
+    section{padding:26px 0}
+    h2{margin:0 0 10px;font-size:32px}
+    .sub{color:var(--muted);max-width:780px}
+    .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .card{background:rgba(16,30,64,.84);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px;font-size:21px}
+    .small{font-size:14px;color:var(--muted)}
     ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
-    .price{font-size:34px;font-weight:800;color:#fff;margin:2px 0}
-    .price span{font-size:16px;color:#9fb3e8}
+    .pill{display:inline-block;font-size:12px;padding:5px 10px;border-radius:999px;border:1px solid #3c5da3;background:#173062;color:#d2deff}
+    .price{font-size:36px;font-weight:800;margin:2px 0}.price span{font-size:15px;color:#9db3eb}
+    .two{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
     .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-    .step{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(13,24,52,.65)}
-    .step b{display:inline-block;background:#213569;border:1px solid #3b5497;border-radius:8px;padding:1px 7px;margin-bottom:6px}
-    .faq .item{padding:12px 0;border-bottom:1px solid #22325b}
-    .contact{display:grid;grid-template-columns:1.25fr .9fr;gap:14px}
-    .tag{display:inline-block;font-size:12px;padding:5px 10px;border:1px solid #2b437a;border-radius:999px;color:#c4d2ff;background:#14244f}
-    .footer{padding:30px 0 24px;color:#8ea0d5;font-size:14px}
-    @media (max-width:980px){.kpis,.grid,.steps,.contact{grid-template-columns:1fr 1fr}h1{font-size:40px}}
-    @media (max-width:700px){.kpis,.grid,.steps,.contact{grid-template-columns:1fr}h1{font-size:34px}.container{padding:18px}}
+    .step{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(13,24,52,.6)}
+    .step b{display:inline-block;padding:1px 8px;border-radius:8px;background:#20386c;border:1px solid #4160a7;margin-bottom:6px}
+    .faq .item{padding:12px 0;border-bottom:1px solid #22345f}
+    .note{font-size:13px;color:#90a3d8}
+    .risk{color:var(--danger)}
+    .footer{padding:26px 0 28px;color:#90a3d8;font-size:14px}
+    @media (max-width:980px){.kpis,.grid3,.steps{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+    @media (max-width:690px){.links{display:none}.kpis,.grid3,.steps{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="nav">
+  <header class="top">
+    <div class="container nav">
       <div class="logo">Northstar <span>Content Systems</span></div>
-      <nav>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#pakete">Pakete</a>
-        <a href="#prozess">Prozess</a>
-        <a href="#kontakt">Kontakt</a>
+      <nav class="links">
+        <a href="#leistungen">Leistungen</a><a href="#pakete">Pakete</a><a href="#prozess">Prozess</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <main class="container">
     <section class="hero">
-      <span class="badge">Professional Done-for-you B2B Content Engine</span>
-      <h1>Mehr Sichtbarkeit, klarere Positionierung und planbare Pipeline — ohne Content-Chaos.</h1>
-      <p class="lead">Wir bauen ein vollständiges <strong>Content & Research Operating System</strong> für B2B-Teams: strategische Themenplanung, verlässlicher Wochen-Output und messbare Verbesserungen.</p>
+      <span class="badge">Enterprise-grade B2B Content Operations</span>
+      <h1>Hochprofessioneller Content-Output mit klaren Prozessen, messbaren KPIs und planbarer Delivery.</h1>
+      <p class="lead">Wir implementieren ein vollständiges <strong>Content & Research OS</strong> für B2B-Teams: Positionierung, Themenintelligenz, Produktionssystem und monatliche Optimierung.</p>
       <div class="cta">
         <a class="btn primary" href="#kontakt">Pilot starten (30 Tage)</a>
-        <a class="btn secondary" href="#pakete">Pakete ansehen</a>
+        <a class="btn secondary" href="#pakete">Leistungspakete ansehen</a>
       </div>
       <div class="kpis">
-        <div class="kpi"><b>8</b><span class="small">LinkedIn-Posts / Monat</span></div>
-        <div class="kpi"><b>4</b><span class="small">Newsletter / Monat</span></div>
-        <div class="kpi"><b>4</b><span class="small">Content-Briefs / Monat</span></div>
-        <div class="kpi"><b>1</b><span class="small">Markt-Report / Monat</span></div>
+        <div class="kpi"><b>8+</b><span class="small">LinkedIn-Assets / Monat</span></div>
+        <div class="kpi"><b>4</b><span class="small">Newsletter-Ausgaben / Monat</span></div>
+        <div class="kpi"><b>4</b><span class="small">Strategische Content-Briefs</span></div>
+        <div class="kpi"><b>1</b><span class="small">Monatlicher Executive Report</span></div>
       </div>
     </section>
 
-    <section id="leistungen" class="section">
-      <h2>Leistungen</h2>
-      <p>Alles aus einer Hand: Strategie, Research, Produktion, Qualitätssicherung und Reporting.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Content Produktion</h3>
-          <p>LinkedIn, Newsletter und Thought-Leadership-Assets im konsistenten Brand-Ton.</p>
-          <ul><li>Hooks, Struktur, CTA</li><li>Freigabefähige Drafts</li><li>Klarer Redaktionsrhythmus</li></ul>
-        </article>
-        <article class="card">
-          <h3>Markt & Wettbewerbs-Insights</h3>
-          <p>Relevante Themen, Signale und Positionierungschancen für deinen ICP.</p>
-          <ul><li>Wettbewerber-Snapshots</li><li>Themenradar</li><li>Opportunity-Backlog</li></ul>
-        </article>
-        <article class="card">
-          <h3>Operating System</h3>
-          <p>Ein belastbarer Workflow statt Einzelaktionen. Fokus auf Konsistenz und Qualität.</p>
-          <ul><li>SOPs & Checklisten</li><li>Wöchentliche Delivery</li><li>Monatliche Optimierung</li></ul>
-        </article>
+    <section id="leistungen">
+      <h2>Leistungsumfang</h2>
+      <p class="sub">Von der Themenstrategie bis zur finalen Delivery: ein klarer End-to-End Prozess statt ad-hoc Content.</p>
+      <div class="grid3">
+        <article class="card"><h3>Strategie & Positionierung</h3><p>ICP-Fokus, Themencluster und Messaging-Architektur für konsistente Wahrnehmung.</p><ul><li>Positionierungsrahmen</li><li>Content-Priorisierung</li><li>Messaging-Guidelines</li></ul></article>
+        <article class="card"><h3>Research & Insights</h3><p>Kontinuierliches Markt- und Wettbewerbsmonitoring als Entscheidungsgrundlage.</p><ul><li>Signal Monitoring</li><li>Wettbewerbs-Snapshots</li><li>Opportunity Backlog</li></ul></article>
+        <article class="card"><h3>Produktion & QA</h3><p>Wöchentliche Output-Maschine mit dokumentierten Qualitätskriterien.</p><ul><li>Redaktionelle Standards</li><li>Korrekturschleife</li><li>Freigabefähige Drafts</li></ul></article>
       </div>
     </section>
 
-    <section id="pakete" class="section">
+    <section id="pakete">
       <h2>Pakete</h2>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">Starter</span>
-          <h3>Pilot</h3>
-          <p class="price">1.200€</p>
-          <p>30 Tage für schnellen Proof und erste Case-Daten.</p>
-          <ul><li>Onboarding & Positionierung</li><li>Wöchentlicher Delivery-Zyklus</li><li>1 Korrekturschleife / Batch</li></ul>
-        </article>
-        <article class="card">
-          <span class="tag">Beliebt</span>
-          <h3>Growth</h3>
-          <p class="price">2.500€ <span>/ Monat</span></p>
-          <p>Für Teams mit aktivem Funnel und klaren Wachstumszielen.</p>
-          <ul><li>Höheres Volumen</li><li>Priorisierte Themenplanung</li><li>Engere Iterationsschleifen</li></ul>
-        </article>
-        <article class="card">
-          <span class="tag">Scale</span>
-          <h3>Pro</h3>
-          <p class="price">4.000€ <span>/ Monat</span></p>
-          <p>Content + Research + operative Automations-Module.</p>
-          <ul><li>Executive-Level Sparring</li><li>Advanced Reporting</li><li>Skalierungs-Playbook</li></ul>
-        </article>
+      <div class="grid3">
+        <article class="card"><span class="pill">Pilot</span><h3>Starter</h3><p class="price">1.200€</p><p class="small">30 Tage, fokussiert auf schnellen Proof & Case-Basis.</p><ul><li>Onboarding + Setup</li><li>Wöchentliche Delivery</li><li>1 Revision / Batch</li></ul></article>
+        <article class="card"><span class="pill">Most Popular</span><h3>Growth</h3><p class="price">2.500€ <span>/ Monat</span></p><p class="small">Für Teams mit aktivem Vertrieb und klaren Wachstumszielen.</p><ul><li>Höheres Asset-Volumen</li><li>Engere Iterationen</li><li>Priorisierte Themen-Sprints</li></ul></article>
+        <article class="card"><span class="pill">Scale</span><h3>Pro</h3><p class="price">4.000€ <span>/ Monat</span></p><p class="small">Content + Research + operative Automationsbausteine.</p><ul><li>Executive Sparring</li><li>Advanced Reporting</li><li>Skalierungs-Roadmap</li></ul></article>
       </div>
     </section>
 
-    <section id="prozess" class="section">
-      <h2>So läuft die Zusammenarbeit</h2>
+    <section id="prozess">
+      <h2>Delivery-Prozess</h2>
       <div class="steps">
-        <div class="step"><b>1</b><div><strong>Onboarding</strong><br><span class="small">Zielmarkt, Positionierung, Tone-of-Voice, KPIs.</span></div></div>
-        <div class="step"><b>2</b><div><strong>Strategie</strong><br><span class="small">Themencluster, Priorisierung, Redaktionssystem.</span></div></div>
-        <div class="step"><b>3</b><div><strong>Delivery</strong><br><span class="small">Wöchentliche Produktion + Qualitätssicherung.</span></div></div>
-        <div class="step"><b>4</b><div><strong>Optimierung</strong><br><span class="small">Monatsreport, Learnings, nächste Prioritäten.</span></div></div>
+        <div class="step"><b>1</b><strong>Onboarding</strong><div class="small">Ziele, ICP, Tone of Voice, KPI-Definition.</div></div>
+        <div class="step"><b>2</b><strong>System Setup</strong><div class="small">Themen-Engine, SOPs, Freigabeflow.</div></div>
+        <div class="step"><b>3</b><strong>Wöchentliche Delivery</strong><div class="small">Planbarer Output mit QA-Check.</div></div>
+        <div class="step"><b>4</b><strong>Monats-Optimierung</strong><div class="small">Report, Learnings, Prioritäten.</div></div>
       </div>
     </section>
 
-    <section class="section faq">
-      <h2>FAQ</h2>
-      <div class="item"><strong>Für wen ist das geeignet?</strong><br><span class="small">Für B2B-Agenturen, Beratungen, SaaS und erklärungsbedürftige Services.</span></div>
-      <div class="item"><strong>Was ist nicht enthalten?</strong><br><span class="small">Paid Ads Management, vollständige CRM-Implementierungen und Rechtsberatung.</span></div>
-      <div class="item"><strong>Wie schnell startet ihr?</strong><br><span class="small">In der Regel innerhalb von 48 Stunden nach Onboarding.</span></div>
-    </section>
-
-    <section id="kontakt" class="section contact">
-      <article class="card">
-        <h2>Kontakt & Pilot</h2>
-        <p>Schick uns „PILOT“ mit 2 Sätzen zu Angebot + Zielmarkt. Wir melden uns mit einem konkreten Startplan.</p>
-        <p><strong>E-Mail:</strong> hello@yourdomain.com<br>
-        <strong>Telegram:</strong> @yourhandle</p>
-        <p class="small">Hinweis: Inhalte werden KI-gestützt erstellt und redaktionell geprüft.</p>
+    <section class="two" id="faq">
+      <article class="card faq">
+        <h2>FAQ</h2>
+        <div class="item"><strong>Wie schnell startet ihr?</strong><br><span class="small">In der Regel innerhalb von 48 Stunden nach Onboarding.</span></div>
+        <div class="item"><strong>Was ist nicht enthalten?</strong><br><span class="small">Paid Ads Management, vollständige CRM-Implementierung, Rechtsberatung.</span></div>
+        <div class="item"><strong>Ist das für kleine Teams geeignet?</strong><br><span class="small">Ja, besonders für B2B-Teams mit klarem Angebot und knappem internen Content-Slot.</span></div>
       </article>
-      <article class="card">
-        <h3>Compliance & Qualität</h3>
-        <ul>
-          <li>Klare Freigabeprozesse vor externem Versand</li>
-          <li>Transparente Arbeitsweise und dokumentierte SOPs</li>
-          <li>Datensparsame Prozesse nach EU-Standards</li>
-        </ul>
+      <article class="card" id="kontakt">
+        <h2>Kontakt & Start</h2>
+        <p>Schick uns „PILOT“ mit 2 Sätzen zu Angebot und Zielmarkt. Du erhältst eine konkrete Start-Roadmap.</p>
+        <p><strong>E-Mail:</strong> hello@yourdomain.com<br><strong>Telegram:</strong> @yourhandle</p>
+        <p class="note">Hinweis: Inhalte werden KI-gestützt erstellt und redaktionell geprüft.</p>
+        <p class="note risk">Compliance: Externe Veröffentlichungen erfolgen nur nach Freigabe.</p>
       </article>
     </section>
 
-    <footer class="footer">
-      © 2026 Northstar Content Systems · All rights reserved
-    </footer>
-  </div>
+    <footer class="footer">© 2026 Northstar Content Systems · All rights reserved</footer>
+  </main>
 </body>
 </html>
